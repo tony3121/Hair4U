@@ -1,0 +1,153 @@
+
+  html{background-color: white;
+  }
+
+  body{
+    background-color: white;
+    font-family: Verdan, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 1em;
+  }
+  h1{
+    color: cadetblue;
+  }
+
+  h3.question{
+    font-size: 2em;
+  }
+
+  .info{
+    font-size: 1,5em;
+  }
+
+  .answer{
+    background-color: #56a5eb;
+    color: white;
+    border:0.1rem solid #56a5eb;
+    padding: 1em;
+    text-align: center;
+    cursor: pointer;
+    width: 48%;
+    font-size: 1.8rem;
+    margin: 10px auto 0;
+
+  }
+
+  .answer:hover{
+    cursor: pointer;
+    box-shadow: 0 0.8rem 2.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    background-color: #B5B7BB;
+  }
+
+  .answer.selected{
+    background-color: red;
+  }
+
+button{  display: block;
+width: 30%;
+font-size: 1.8rem;
+padding: 1rem 0;
+width: 10rem;
+text-align: center;
+border: 0.1rem solid #56a5eb;
+margin-bottom: 1rem;
+text-decoration: none;
+color: #56a5eb;
+background-color: white;
+
+display: block;
+width: 30%;
+
+}
+
+  .button{
+    font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid #56a5eb;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #56a5eb;
+  background-color: white;
+  }
+
+  .mini.button{
+    display: block;
+    width: 30%;
+  }
+
+  .next{
+    float: right;
+    display: block;
+    width: 30%;
+    font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid #56a5eb;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #56a5eb;
+  background-color: white;
+  }
+
+  .previous{
+    float:left
+  }
+
+  .button:hover{
+    cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+  }
+
+  button:hover{
+    cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+  }
+
+  .button-holder{
+    width:60%;
+    padding: .5em 0;
+    margin: .5em auto;
+  }
+  button-holder{
+    width:60%;
+    padding: .5em 0;
+    margin: .5em auto;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    content: "";
+    display: table;
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+  .response p{
+    margin: 50px auto;
+    font-size: 3em;
+  }
+  #myProgress {
+    width: 100%;
+    background-color: #ddd;
+  }
+
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #56a5eb;
+  }

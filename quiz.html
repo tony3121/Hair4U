@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hair4U QUIZ</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="quiz.css" />
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="quiz.js"></script>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<div class="header">
+<a href="#default" class="logo"><img src="hair4u.png" width="60" height="60" alt="hair4u"></a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+      <a href="quiz.html">Quiz</a>
+        <a href="notes.html">Notes</a>
+          <a href="hair&products.html">Hair & Product</a>
+            <a href="about.html">About</a>
+              <a href="logout.html">Log Out</a>
+</div>
+</div>
+
+  <h1>What Hair Type do you have</h1>
+  <div id="quiz-area">
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+    <div class="numOne">
+        <h3 class="question">Describe the way your hair looks</h3>
+        <button class="1Q answer Straight" type="button" onclick="move()"> Straight (TYPE 1) </button>
+        <button class="1Q answer Wavy " type="button" onclick="move()"> Wavy (TYPE 2) </button>
+        <button class="1Q answer Curly " type="button" onclick="move()"> Curly (TYPE 3) </button>
+        <button class="1Q answer Coily " type="button" onclick="move()"> Coily (TYPE 4) </button>
+
+       </div>
+
+    <div class="numTwo hideQ">
+      <h3 class="question">Does your hair look dry and dull often? </h3>
+
+      <button class="2Q answer " type="button" value="2" onclick="move()"> Yes </button>
+      <button class="2Q answer " type="button" value="0" onclick="move()"> No </button>
+
+    </div>
+
+<div class="numThree hideQ">
+  <h3 class="question">Does your hair feel rough to touch?</h3>
+      <button class="3Q answer " type="button" value="2" onclick="move()"> Yes </button>
+      <button class="3Q answer " type="button" value="0" onclick="move()"> No </button>
+</div>
+
+<div class="numFour hideQ">
+  <h3 class="question">Does the climate affect the overall appearance of your hair?</h3>
+      <button class="4Q answer " type="button" value="1" onclick="move()"> Yes </button>
+      <button class="4Q answer " type="button" value="0" onclick="move()"> No </button>
+</div>
+
+
+    <div class="numFive hideQ">
+      <h3 class="question">Do you suffer from an abnormal amount of dandruff?</h3>
+          <button class="5Q answer " type="button" value="4" onclick="move()"> Yes </button>
+          <button class="5Q answer " type="button" value="0" onclick="move()"> No </button>
+    </div>
+
+    <div class="numSix hideQ">
+      <h3 class="question">Do you suffer from an itchy scalp? </h3>
+          <button class="6Q answer " type="button" value="3" onclick="move()"> Yes </button>
+          <button class="6Q answer " type="button" value="0" onclick="move()"> No </button>
+    </div>
+
+    <div class="numSeven hideQ">
+      <h3 class="question">Do you have any type of skin condition? </h3>
+          <button class="7Q answer " type="button" value="1" onclick="move()"> Yes </button>
+          <button class="7Q answer " type="button" value="0" onclick="move()"> No </button>
+    </div>
+
+    <div class="numEight hideQ">
+      <h3 class="question">Are you typically concerned about the growth rate of your hair ?</h3>
+          <button class="8Q answer " type="button" value="2" onclick="move()"> Yes </button>
+          <button class="8Q answer " type="button" value="0" onclick="move()"> No </button>
+    </div>
+
+    <div class="numNine hideQ">
+      <h3 class="question">Are you looking for the right methods to accelerate the growth of healthy hair? </h3>
+          <button class="9Q answer " type="button" value="2" onclick="move()"> Yes </button>
+          <button class="9Q answer " type="button" value="0" onclick="move()"> No </button>
+    </div>
+
+    <div class="numTen hideQ">
+      <h3 class="question">Are you interested in taking supplements to increase the rate at which your hair grows?</h3>
+          <button class="10Q answer " type="button" value="0" onclick="move()"> Yes </button>
+          <button class="10Q answer " type="button" value="0" onclick="move()"> No </button>
+    </div>
+
+    <div class="numEleven hideQ">
+      <h3 class="question">Do you find it hard to control frizz? </h3>
+          <button class="11Q answer " type="button" value="1" onclick="move()"> Yes </button>
+          <button class="11Q answer " type="button" value="0" onclick="move()"> No </button>
+    </div>
+
+    <div class="numTwelve hideQ">
+      <h3 class="question">Do you experience annoying fly ways? </h3>
+          <button class="12Q answer " type="button" value="1" onclick="move()"> Yes </button>
+          <button class="12Q answer " type="button" value="0" onclick="move()"> No </button>
+    </div>
+
+    <div class="numThirteen hideQ">
+      <h3 class="question">Are you interested in using extra styling products to help reduce frizz?</h3>
+          <button class="13Q answer " type="button" value="3" onclick="move()"> Yes </button>
+          <button class="13Q answer " type="button" value="0" onclick="move()"> No </button>
+    </div>
+
+    <div class="numFourteen hideQ">
+      <h3 class="question">Do you experience split ends?</h3>
+          <button class="14Q answer " type="button" value="1" onclick="move()"> Yes </button>
+          <button class="14Q answer " type="button" value="0" onclick="move()"> No </button>
+    </div>
+
+    <div class="numFifteen hideQ">
+      <h3 class="question">Do you get your hair professionally cut ? </h3>
+          <button class="15Q answer " type="button" value="0" onclick="move()"> Yes </button>
+          <button class="15Q answer " type="button" value="2" onclick="move()"> No </button>
+    </div>
+
+    <div class="numSixteen hideQ">
+      <h3 class="question">Are you looking for a solution to your problematic split ends? </h3>
+
+          <button class="16Q answer " type="button" value="1" onclick="move()"> Yes </button>
+          <button class="16Q answer " type="button" value="0" onclick="move()"> No </button>
+
+        </div>
+
+        <script>
+        var i = 0;
+        function move() {
+          if (i == 0) {
+            i = 1;
+            var elem = document.getElementById("myBar");
+            var width = 1;
+            var id = setInterval(frame, 10);
+            function frame() {
+              if (width >= 100) {
+                clearInterval(id);
+                i = 0;
+              } else {
+                width++;
+                elem.style.width = width + "%";
+              }
+            }
+          }
+        }
+        </script>
+
+  <!-- end or hair quiz area -->
+<div class="button finish">WHAT AM I</div></div>
+
+<div class="response" style="display: none;"> <p></p>
+<div class="missed button" style="display: none;">Check Answers</div>
+</div>
+
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="quiz.js"></script>
+
+
+</body>
+</html>
