@@ -21,117 +21,120 @@
               <a href="logout.html">Log Out</a>
 </div>
 </div>
+<div class="claculator_keys">
+
 
   <h1>What Hair Type do you have</h1>
   <div id="quiz-area">
     <div id="myProgress">
       <div id="myBar"></div>
     </div>
-    <div class="numOne">
+    <div class="numOne" id="num1">
         <h3 class="question">Describe the way your hair looks</h3>
-        <button class="1Q answer Straight" type="button" onclick="move()"> Straight (TYPE 1) </button>
-        <button class="1Q answer Wavy " type="button" onclick="move()"> Wavy (TYPE 2) </button>
-        <button class="1Q answer Curly " type="button" onclick="move()"> Curly (TYPE 3) </button>
-        <button class="1Q answer Coily " type="button" onclick="move()"> Coily (TYPE 4) </button>
+        <button class="1Q answer Straight" type="button" onclick="move()" id="ans1"> Straight (TYPE 1) </button>
+        <button class="1Q answer Wavy " type="button" onclick="move()" id="ans1"> Wavy (TYPE 2) </button>
+        <button class="1Q answer Curly " type="button" onclick="move()" id="ans1"> Curly (TYPE 3) </button>
+        <button class="1Q answer Coily " type="button" onclick="move()" id="ans1"> Coily (TYPE 4) </button>
 
        </div>
 
-    <div class="numTwo hideQ">
+
+    <div class="numTwo hideQ" id="num2">
       <h3 class="question">Does your hair look dry and dull often? </h3>
 
-      <button class="2Q answer " type="button" value="2" onclick="move()"> Yes </button>
-      <button class="2Q answer " type="button" value="0" onclick="move()"> No </button>
+      <button class="2Q answer " type="button" value="2" onclick="move()" id="ans2"> Yes </button>
+      <button class="2Q answer " type="button" value="0" onclick="move()" id="ans2"> No </button>
 
     </div>
 
-<div class="numThree hideQ">
+<div class="numThree hideQ" id="num3">
   <h3 class="question">Does your hair feel rough to touch?</h3>
-      <button class="3Q answer " type="button" value="2" onclick="move()"> Yes </button>
-      <button class="3Q answer " type="button" value="0" onclick="move()"> No </button>
+      <button class="3Q answer " type="button" value="2" onclick="move()" id="ans3"> Yes </button>
+      <button class="3Q answer " type="button" value="0" onclick="move()" id="ans3"> No </button>
 </div>
 
-<div class="numFour hideQ">
+<div class="numFour hideQ" id="num4">
   <h3 class="question">Does the climate affect the overall appearance of your hair?</h3>
-      <button class="4Q answer " type="button" value="1" onclick="move()"> Yes </button>
-      <button class="4Q answer " type="button" value="0" onclick="move()"> No </button>
+      <button class="4Q answer " type="button" value="1" onclick="move()" id="ans4"> Yes </button>
+      <button class="4Q answer " type="button" value="0" onclick="move()" id="ans4"> No </button>
 </div>
 
 
-    <div class="numFive hideQ">
+    <div class="numFive hideQ" id="num5">
       <h3 class="question">Do you suffer from an abnormal amount of dandruff?</h3>
-          <button class="5Q answer " type="button" value="4" onclick="move()"> Yes </button>
-          <button class="5Q answer " type="button" value="0" onclick="move()"> No </button>
+          <button class="5Q answer " type="button" value="4" onclick="move()" id="ans5"> Yes </button>
+          <button class="5Q answer " type="button" value="0" onclick="move()" id="ans5"> No </button>
     </div>
 
-    <div class="numSix hideQ">
+    <div class="numSix hideQ" id="num6">
       <h3 class="question">Do you suffer from an itchy scalp? </h3>
-          <button class="6Q answer " type="button" value="3" onclick="move()"> Yes </button>
-          <button class="6Q answer " type="button" value="0" onclick="move()"> No </button>
+          <button class="6Q answer " type="button" value="3" onclick="move()" id="ans6"> Yes </button>
+          <button class="6Q answer " type="button" value="0" onclick="move()" id="ans6"> No </button>
     </div>
 
-    <div class="numSeven hideQ">
+    <div class="numSeven hideQ" id="num7">
       <h3 class="question">Do you have any type of skin condition? </h3>
-          <button class="7Q answer " type="button" value="1" onclick="move()"> Yes </button>
-          <button class="7Q answer " type="button" value="0" onclick="move()"> No </button>
+          <button class="7Q answer " type="button" value="1" onclick="move()" id="ans7"> Yes </button>
+          <button class="7Q answer " type="button" value="0" onclick="move()" id="ans7"> No </button>
     </div>
 
-    <div class="numEight hideQ">
+    <div class="numEight hideQ" id="num8">
       <h3 class="question">Are you typically concerned about the growth rate of your hair ?</h3>
-          <button class="8Q answer " type="button" value="2" onclick="move()"> Yes </button>
-          <button class="8Q answer " type="button" value="0" onclick="move()"> No </button>
+          <button class="8Q answer " type="button" value="2" onclick="move()" id="ans8"> Yes </button>
+          <button class="8Q answer " type="button" value="0" onclick="move()" id="ans8"> No </button>
     </div>
 
-    <div class="numNine hideQ">
+    <div class="numNine hideQ" id="num9">
       <h3 class="question">Are you looking for the right methods to accelerate the growth of healthy hair? </h3>
-          <button class="9Q answer " type="button" value="2" onclick="move()"> Yes </button>
-          <button class="9Q answer " type="button" value="0" onclick="move()"> No </button>
+          <button class="9Q answer " type="button" value="2" onclick="move()" id="ans9"> Yes </button>
+          <button class="9Q answer " type="button" value="0" onclick="move()" id="ans9"> No </button>
     </div>
 
-    <div class="numTen hideQ">
+    <div class="numTen hideQ" id="num10">
       <h3 class="question">Are you interested in taking supplements to increase the rate at which your hair grows?</h3>
-          <button class="10Q answer " type="button" value="0" onclick="move()"> Yes </button>
-          <button class="10Q answer " type="button" value="0" onclick="move()"> No </button>
+          <button class="10Q answer " type="button" value="0" onclick="move()" id="ans10"> Yes </button>
+          <button class="10Q answer " type="button" value="0" onclick="move()" id="ans10"> No </button>
     </div>
 
-    <div class="numEleven hideQ">
+    <div class="numEleven hideQ" id="num11">
       <h3 class="question">Do you find it hard to control frizz? </h3>
-          <button class="11Q answer " type="button" value="1" onclick="move()"> Yes </button>
-          <button class="11Q answer " type="button" value="0" onclick="move()"> No </button>
+          <button class="11Q answer " type="button" value="1" onclick="move()" id="ans11"> Yes </button>
+          <button class="11Q answer " type="button" value="0" onclick="move()" id="ans11"> No </button>
     </div>
 
-    <div class="numTwelve hideQ">
+    <div class="numTwelve hideQ" id="num12">
       <h3 class="question">Do you experience annoying fly ways? </h3>
-          <button class="12Q answer " type="button" value="1" onclick="move()"> Yes </button>
-          <button class="12Q answer " type="button" value="0" onclick="move()"> No </button>
+          <button class="12Q answer " type="button" value="1" onclick="move()" id="ans12"> Yes </button>
+          <button class="12Q answer " type="button" value="0" onclick="move()" id="ans12"> No </button>
     </div>
 
-    <div class="numThirteen hideQ">
+    <div class="numThirteen hideQ" id="num13">
       <h3 class="question">Are you interested in using extra styling products to help reduce frizz?</h3>
-          <button class="13Q answer " type="button" value="3" onclick="move()"> Yes </button>
-          <button class="13Q answer " type="button" value="0" onclick="move()"> No </button>
+          <button class="13Q answer " type="button" value="3" onclick="move()" id="ans13"> Yes </button>
+          <button class="13Q answer " type="button" value="0" onclick="move()" id="ans13"> No </button>
     </div>
 
-    <div class="numFourteen hideQ">
+    <div class="numFourteen hideQ" id="num14">
       <h3 class="question">Do you experience split ends?</h3>
-          <button class="14Q answer " type="button" value="1" onclick="move()"> Yes </button>
-          <button class="14Q answer " type="button" value="0" onclick="move()"> No </button>
+          <button class="14Q answer " type="button" value="1" onclick="move()" id="ans14"> Yes </button>
+          <button class="14Q answer " type="button" value="0" onclick="move()" id="ans14"> No </button>
     </div>
 
-    <div class="numFifteen hideQ">
+    <div class="numFifteen hideQ" id="num15">
       <h3 class="question">Do you get your hair professionally cut ? </h3>
-          <button class="15Q answer " type="button" value="0" onclick="move()"> Yes </button>
-          <button class="15Q answer " type="button" value="2" onclick="move()"> No </button>
+          <button class="15Q answer " type="button" value="0" onclick="move()" id="ans15"> Yes </button>
+          <button class="15Q answer " type="button" value="2" onclick="move()" id="ans15"> No </button>
     </div>
 
-    <div class="numSixteen hideQ">
+    <div class="numSixteen hideQ" id="num16">
       <h3 class="question">Are you looking for a solution to your problematic split ends? </h3>
 
-          <button class="16Q answer " type="button" value="1" onclick="move()"> Yes </button>
-          <button class="16Q answer " type="button" value="0" onclick="move()"> No </button>
+          <button class="16Q answer " type="button" value="1" onclick="move()" id="ans16"> Yes </button>
+          <button class="16Q answer " type="button" value="0" onclick="move()" id="ans16"> No </button>
 
         </div>
 
-        <script>
+  <script>
         var i = 0;
         function move() {
           if (i == 0) {
@@ -152,16 +155,190 @@
         }
         </script>
 
+
+  <script>
+        $(document).ready(function() {
+          $('#num2').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num3').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num4').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num5').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num6').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num7').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num8').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num9').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num10').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num11').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num12').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num13').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num14').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num15').hide();
+        });
+
+        $(document).ready(function() {
+          $('#num16').hide();
+        });
+
+        $(document).ready(function(){
+          $('#ans1').on('click', function(){
+            $('#num1').hide();
+            $('#num2').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans2').on('click', function(){
+            $('#num2').hide();
+            $('#num3').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans3').on('click', function(){
+            $('#num3').hide();
+            $('#num4').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans4').on('click', function(){
+            $('#num4').hide();
+            $('#num5').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans5').on('click', function(){
+            $('#num5').hide();
+            $('#num6').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans6').on('click', function(){
+            $('#num6').hide();
+            $('#num7').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans7').on('click', function(){
+            $('#num7').hide();
+            $('#num8').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans8').on('click', function(){
+            $('#num8').hide();
+            $('#num9').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans9').on('click', function(){
+            $('#num9').hide();
+            $('#num10').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans10').on('click', function(){
+            $('#num10').hide();
+            $('#num11').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans11').on('click', function(){
+            $('#num11').hide();
+            $('#num12').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans12').on('click', function(){
+            $('#num12').hide();
+            $('#num13').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans13').on('click', function(){
+            $('#num13').hide();
+            $('#num14').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans14').on('click', function(){
+            $('#num14').hide();
+            $('#num15').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans15').on('click', function(){
+            $('#num15').hide();
+            $('#num16').show();
+          })
+        })
+
+        $(document).ready(function(){
+          $('#ans16').on('click', function(){
+            $('#num16').hide();
+            $('wai').show();
+          })
+        })
+
+        </script>
+
+</div>
   <!-- end or hair quiz area -->
-<div class="button finish">WHAT AM I</div></div>
+<div class="button finish" id="wai">WHAT AM I</div></div>
 
 <div class="response" style="display: none;"> <p></p>
 <div class="missed button" style="display: none;">Check Answers</div>
 </div>
 
-
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="quiz.js"></script>
 
 
 </body>
