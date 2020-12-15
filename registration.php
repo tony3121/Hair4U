@@ -5,7 +5,6 @@ require_once('config.php');
 <html> 
 <head> 
     <title>Hair4U Client Registration  </title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head> 
 <body> 
 
